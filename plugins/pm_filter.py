@@ -404,12 +404,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ɪɴ ᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ 🔍', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇꜱ 🤖', url='https://t.me/+ME3VIAyvhIRhODYx')
         ], [
-            InlineKeyboardButton('ℹ️ ᴀʙᴏᴜᴛ ℹ️', callback_data='help'),
+            InlineKeyboardButton('ℹ️ ʜᴇʟᴘ ℹ️', callback_data='help'),
             InlineKeyboardButton('📢 ᴀʙᴏᴜᴛ 📢', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
