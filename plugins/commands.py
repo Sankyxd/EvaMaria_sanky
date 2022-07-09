@@ -240,6 +240,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('𝖏𝖔𝖎𝖓 𝖔𝖚𝖗 𝖌𝖗𝖔𝖚𝖕', url='https://t.me/CholochitrerJogotReq') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
